@@ -14,7 +14,7 @@ from io import StringIO
 from discord import ui
 import logging
 from datetime import datetime
-from flask import logging
+
 
 
 intents = discord.Intents.all()
