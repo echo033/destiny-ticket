@@ -44,12 +44,6 @@ intents = discord.Intents.all()
 bot = commands.Bot(command_prefix="!", intents=intents, help_command=None)
 
 
-CATEGORY_ID = config.get("category_id")
-TEAM_ROLE_IDS = config.get("role_team_ids", [])
-LOGS_CHANNEL_ID = config.get("logs_channel_id")
-AUTO_ROLE_ID = config.get("auto_role_id")
-PING_ROLE_ID = config.get("ping_role_id")
-
 FIVEM_IP = "82.67.2.57"
 FIVEM_PORT = "30120"
 
