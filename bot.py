@@ -20,11 +20,6 @@ from datetime import datetime
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix="!", intents=intents, help_command=None)
 
-def load_config():
-    with open("config.json", "r") as f:
-        return json.load(f)
-
-config = load_config()
 
 CATEGORY_ID = config.get("category_id")
 TEAM_ROLE_IDS = config.get("role_team_ids", [])
