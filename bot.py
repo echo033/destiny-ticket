@@ -15,6 +15,29 @@ from discord import ui
 import logging
 from datetime import datetime
 
+import os
+
+TOKEN = os.getenv("DISCORD_TOKEN")
+
+CATEGORY_PROBLEME_BOUTIQUE_ID = int(os.getenv("CATEGORY_PROBLEME_BOUTIQUE_ID"))
+CATEGORY_PLAINTE_STAFF_ID   = int(os.getenv("CATEGORY_PLAINTE_STAFF_ID"))
+CATEGORY_MORT_RP_ID         = int(os.getenv("CATEGORY_MORT_RP_ID"))
+CATEGORY_PROBLEME_RP_ID     = int(os.getenv("CATEGORY_PROBLEME_RP_ID"))
+CATEGORY_DOSSIER_LEGAL_ID   = int(os.getenv("CATEGORY_DOSSIER_LEGAL_ID"))
+CATEGORY_DOSSIER_ILLEGAL_ID = int(os.getenv("CATEGORY_DOSSIER_ILLEGAL_ID"))
+CATEGORY_REMBOURSEMENT_ID   = int(os.getenv("CATEGORY_REMBOURSEMENT_ID"))
+CATEGORY_BUGS_ID             = int(os.getenv("CATEGORY_BUGS_ID"))
+CATEGORY_BANS_ID             = int(os.getenv("CATEGORY_BANS_ID"))
+CATEGORY_WIPE_ID             = int(os.getenv("CATEGORY_WIPE_ID"))
+CATEGORY_AUTRES_ID           = int(os.getenv("CATEGORY_AUTRES_ID"))
+
+ROLE_TEAM_IDS = [int(x) for x in os.getenv("ROLE_TEAM_IDS").split(",")]
+
+LOGS_CHANNEL_ID             = int(os.getenv("LOGS_CHANNEL_ID"))
+AUTO_ROLE_ID                = int(os.getenv("AUTO_ROLE_ID"))
+PING_ROLE_ID                = int(os.getenv("PING_ROLE_ID"))
+TICKET_REMINDER_CHANNEL_ID  = int(os.getenv("TICKET_REMINDER_CHANNEL_ID"))
+
 
 
 intents = discord.Intents.all()
